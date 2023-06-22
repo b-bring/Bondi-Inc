@@ -1,0 +1,274 @@
+:root{
+    --dark-color:#19283f;
+    --vdark-color:#19283f;
+    --btn-color :#ff3150;
+    --ic-color :#eff7fa;
+    --ic2-color:#33d1cc;
+    --h-color :#ffc400;
+    --bg-color :#eff7fa;
+}
+
+
+
+body{
+font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    background-color:var(--dark-color);
+    box-shadow: 0 0 10px  0px blue;
+}
+nav img,
+.footer img{
+    width: 70px;
+}
+
+
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active{
+    color: whitesmoke;
+}
+.navbar .search{
+    cursor: pointer;
+    border-left: 1px solid var(--ic2-color) !important;
+}
+
+.navbar .search svg{
+    color: var(--ic2-color);
+}
+
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border: solid 1px teal;
+}
+
+.landing {
+    height: calc(100vh - 47px);
+    background-color: var(--vdark-color);
+    z-index: 11111;
+}
+
+.main-btn{
+     background-color: var(--btn-color) !important;
+     color: var(--h-color) !important;
+     font-weight: bold;
+}
+
+
+ .Main-title{
+    position: relative;
+}
+
+ .Main-title::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(34, 204, 204);
+    bottom: -20px;
+}
+
+.section .icon-holder{
+    height: 250px;
+}
+
+.section .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section .number{
+    font-size: 16rem;
+color: var(--ic-color);
+}
+.section .icon{
+    color: var(--ic2-color);
+}
+
+.section .feat h4{
+    color: var(--h-color);
+}
+
+.our-work{
+    background-color: var(--bg-color);
+
+}
+
+.our-work ul li{
+    padding: 0.5rem 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: .2s;
+    cursor: pointer;
+}
+.our-work ul li.active{
+    background-color: var(--btn-color);
+    font-weight: bold;
+    color: var(--h-color);
+}
+
+.our-work ul li:not(.active):hover{
+    color: var(--btn-color);
+}
+
+
+.our-work .box{
+    overflow: hidden;
+    padding: 5px;
+    background-color: white;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.our-work .box::before{
+    content: attr(data-att);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgba(0, 128, 128, 0.71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 10px));
+    transition: .5s;
+}
+
+.our-work .box:hover:before{
+    transform: translatex(0);
+}
+
+.feature .describe{
+    max-width: 500px;
+}
+
+.team{
+    background-color: var(--bg-color);
+}
+.team .team-title h2{ 
+    color: var(--h-color);
+}
+.team .team-title p{
+    color: rgba(0, 0, 0, .5) !important;
+    font-weight: bold;
+}
+
+.team .team-groub .box{
+    background-color: white;
+}
+.team .team-groub h3{
+    padding: 15px 0px;
+    background-color: #33d1cc;
+    color: white;
+    font-weight: bold;
+}
+
+.team .team-groub p{
+    padding: 15px 0px;
+    color:grey;
+    font-weight: 600;
+}
+
+.start-object{
+    background-color: var(--dark-color);
+}
+.start-object h2{
+    color: white;
+    font-weight: bold;
+}
+.start-object p{
+    color: white;
+    color: rgb(196, 196, 196) !important;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.read-or-blog .card{
+    border: solid 1px grgba(128, 128, 128, 0.299)
+}
+
+.read-or-blog .card .text{
+    padding: 20px;
+}
+
+.subscribe{
+    background-color:#ffc400;
+}
+
+.subscribe input{
+    border: none;
+    border-bottom: solid 1px white;
+}
+.subscribe input:focus{
+    outline: none;
+    text-transform: capitalize;
+}
+.subscribe input::placeholder{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 15px;
+}
+.subscribe a{
+    background-color: var(--dark-color) !important;
+}
+
+.footer{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.footer .text-one,
+.footer .final{ 
+    color: rgb(158, 158, 158);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.footer .final{
+    font-size: 16px !important;
+}
+
+.footer .final .one{
+    color:#33d1cc;
+}
+.footer .final .two{
+    color: #ffc400;
+}
+
+.footer ul li {
+    color: rgb(158, 158, 158);
+    font-weight: bold;
+}
+
+.footer .social .facebook{
+    background-color: #1877f2;
+color: white;
+}
+
+.footer .social .twitter{
+    background-color:#1da1f2;
+}
+
+.footer .social .linkedin{
+    background-color: #0077b5;
+}
+
+.footer .social .youtube{
+    background-color: red;
+}
